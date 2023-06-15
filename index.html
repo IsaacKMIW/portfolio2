@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/98ec5db09a.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+<!---------------------en tete ---------------------->
+    <header id="header">
+        <nav>
+           <img src="isaac Logo.png" class="logo" title="logo Isaac" alt="texte dans un cadre" width="70">
+            <ul id="sidemenu">
+                <li><a href="#header">Accueil</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-texte">
+            <p>Chef de Projet Digital</p>
+            <h1>Hello, Je suis Isaac KIBINDA</h1>
+        </div>
+    </header>
+<!---------------------fin en tete ------------------->
+
+<!---------------------contenu ---------------------->
+    <main>
+    <!---------------------A propos---------------------->
+        <div id="about">
+            <div class="contenair">
+                <div class="ligne">
+                    <div class="about-col-1">
+                        <img src="isaac profil.jpg" title="photo de profil Isaac KIBINDA" alt="une personne debout" width="500">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sous-titre">A propos</h2>
+                        <p>
+                            Je suis actuellement à la recherche d'une alternance en tant que chef de projet digital. Mon cursus se compose d'une semaine de cours suivie de trois semaines en entreprise, ce qui me permettra d'acquérir davantage une expérience professionnelle concrète tout en mettant en pratique mes connaissances théoriques. Esprit curieux, créatif et rigoureux, je suis ouvert à toute offre ou opportunité.
+                        </p>
+                        <div class="tab-titres">
+                            <p class="tab-liens active-lien" onclick="opentab('competences')">Compétences</p>
+                            <p class="tab-liens" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-liens" onclick="opentab('formation')">Formation</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="competences">
+                            <ul>
+                                <li><span>Developpement Web</span><br>
+                                HTML/CSS/JavaScript <br>
+                                Wordpress
+                                </li>
+                                <li><span>Management </span><br>
+                                    Gestion de projet <br>
+                                    Agilité et Scrum <br>
+                                    Trello
+                                </li>
+                                <li><span>Graphisme </span><br>
+                                    Suite Adobe N.I (photoshop, Illustrator et InDesign)<br>
+                                    Canva <br>
+                                </li> 
+                                <li><span>SEO </span><br>
+                                    google Analytics et business,  Answerthepublic<br>
+                                </li>
+                                <li><span>Bureautique </span><br>
+                                    Microsoft Office<br>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 à aujourd'hui - A mon propre compte</span><br>
+                                    -Gestion du site  de culture de manga - <a href="https://kaliemaki.com/" target="_blank">kaliemaki</a><br>
+                                    -Creation des projets <a href="https://isaackmiw.github.io/Site1/" target="_blank">web</a> <br>
+                                    -Création et publication des contenus axé sur la gestion de projet digital sur <a href="linkedin.com/in/isaac-kibinda-b59b38167">Linkedin</a>
+                                </li>
+                                <li><span>2019-2022 - Homintec</span><br>
+                                    **Informaticien**<br>
+                                    -de parc informatique <br>
+                                    -Mise en plece d'un réseau informatique<br>
+                                    -configuration et maintenance des terminaux
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="formation">
+                            <ul>
+                                <li><span>Chef de projet digital</span><br>
+                                Institut Européen de Formation en Ingénierie Informatique (IEF2I) <br>
+                                2022 - 2023 (en cours)
+                                </li>
+                                <li><span>Licence pro Informatique industrielle et maintenance </span><br>
+                                    Institut CERCO <br>
+                                    2018
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--------------------fin A propos-------------------->
+
+    <!--------------------Mes Services-------------------->
+       <div id="services">
+        <div class="contenair">
+            <h2 class="sous-titre">Mes Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maxime similique quisquam cumque, perferendis eos. Veritatis optio porro recusandae repudiandae molestiae, accusantium velit doloribus enim, autem cum molestias nam voluptas.
+                    </p>
+                    <a href="#">Lire plus</a>
+                </div>   
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maxime similique quisquam cumque, perferendis eos. Veritatis optio porro recusandae repudiandae molestiae, accusantium velit doloribus enim, autem cum molestias nam voluptas.
+                    </p>
+                    <a href="#">Lire plus</a>
+                </div>   
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3>App Design</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maxime similique quisquam cumque, perferendis eos. Veritatis optio porro recusandae repudiandae molestiae, accusantium velit doloribus enim, autem cum molestias nam voluptas.
+                    </p>
+                    <a href="#">Lire plus</a>
+                </div>
+            </div>
+        </div>
+       </div> 
+    <!--------------------fin mes Services----------------->
+
+    <!--------------------Mes projets---------------------->
+       <div id="portfolio">
+        <div class="contenair">
+            <h2 class="sous-titre">Mes Projets</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="tour Congo.png" alt="">
+                    <div class="layer">
+                        <h3>Création de site web</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,  est?
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portfolio.png" alt="">
+                    <div class="layer">
+                        <h3>Création de site web</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,  est?
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="kaliemaki.png" alt="">
+                    <div class="layer">
+                        <h3>Création de site web</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,  est?
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Voir plus</a>
+        </div>
+       </div>
+    <!--------------------fin Mes projets-------------------->
+
+    <!--------------------contact----------------------------->
+       <div id="contact">
+        <div class="contenair">
+            <div class="ligne">
+                <div class="contact-gauche">
+                    <h2 class="sous-titre">Contactez-Moi</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:isaackmiw@gmail.com"> isaackmiw@gmail.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i><a href="tel:+33 7 53 23 71 21"> +33 7 53 23 71 21</a></p>
+                    <div class="social-icons">
+                        <a href="linkedin.com/in/isaac-kibinda-b59b38167" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://github.com/IsaacKMIW" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="CV 2023 ACTU.pdf" download class="btn btn2">Télécharger mon CV</a>
+                </div>
+                <div class="contact-droit">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Nom" placeholder="Votre Nom" required>
+                        <input type="email" name="Email" placeholder="Votre Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Votre Message"></textarea>
+                        <button type="submit" class="btn btn2">Envoyer</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+       </div>
+    <!--------------------fin contact-------------------------->
+
+    </main>
+<!---------------------fin contenu ------------------->
+
+<!---------------------pied de page ------------------->
+    <footer class="copyright">
+        <p>copyright &copy; Isaac KIBINDA <i class="fa-solid fa-user"></i></p>
+    </footer>
+<!---------------------pied de page ------------------->
+</body>
+</html>
